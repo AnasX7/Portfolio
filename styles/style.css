@@ -1,10 +1,12 @@
 :root {
   --clr-dark: #070a13;
   --clr-light: #f1f5f9;
+  --clr-slate200: #e2e8f0;
   --clr-slate400: #94a3b8;
   --clr-slate600: #475569;
   --clr-slate800: #1e293b;
   --clr-rose: #e11d48;
+  --clr-rose500: #f43f5e;
   --clr-indigo: #818cf8;
 
   /* rose	rgb(225, 29, 72) */
@@ -67,5 +69,5 @@ a {
 }
 
 strong {
-  color: var(--clr-indigo);
+  color: var(--clr-rose);
 }
