@@ -52,6 +52,12 @@
   /* border: 1px solid red; */
 }
 
+.nav {
+  width: 90%;
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+}
+
 .section {
   margin-top: 5rem;
 }
@@ -74,6 +80,12 @@
 @media (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+
+  .nav {
+    width: 80%;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 

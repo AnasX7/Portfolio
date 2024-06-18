@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
   gap: 1rem;
-  margin-top: 2rem;
+  margin-top: 8rem;
 }
 
 .hero__img {
@@ -112,7 +112,7 @@
   }
 
   .hero__title {
-    font-size: var(--size-7xl);
+    font-size: var(--size-6xl);
   }
 
   .hero__description {
@@ -140,7 +140,7 @@
   }
 
   .hero__title {
-    font-size: var(--size-8xl);
+    font-size: var(--size-7xl);
   }
 
   .hero__description {
