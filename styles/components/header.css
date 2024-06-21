@@ -11,8 +11,7 @@
   border-radius: 22px;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  box-shadow: 0 10px 20px rgba(225, 29, 72, 0.5),
-    0 0 100px -10px var(--clr-rose);
+  box-shadow: 0 0 100px -10px var(--clr-rose);
 }
 
 .header__logo {
@@ -90,10 +89,6 @@
     }
   }
 
-  .header__resume {
-    font-size: var(--size-xs);
-  }
-
   .header__bars {
     display: none;
   }
@@ -112,10 +107,6 @@
   .header__sun {
     width: var(--size-2xl);
     height: var(--size-2xl);
-  }
-
-  .header__resume {
-    font-size: var(--size-sm);
   }
 }
 
