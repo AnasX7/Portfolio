@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--clr-purple);
+  background-color: rgba(92, 126, 230, 0.8);
   border-radius: 15px;
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
@@ -17,7 +17,7 @@
 
 .header__logo {
   font-size: var(--size-xl);
-  color: var(--clr-slate800);
+  color: var(--clr-slate200);
 }
 
 .header__menu {
@@ -30,7 +30,7 @@
 
 .header__bars {
   display: block;
-  fill: var(--clr-slate800);
+  fill: var(--clr-slate200);
   width: var(--size-3xl);
   height: var(--size-3xl);
 }
@@ -61,18 +61,18 @@
     font-size: var(--size-xs);
     text-decoration: none;
     font-weight: 600;
-    color: var(--clr-slate800);
+    color: var(--clr-slate200);
     letter-spacing: -0.05em;
     transition: color 0.3s;
   }
 
   .header__link:hover {
-    color: var(--clr-slate200);
+    color: var(--clr-dark);
   }
 
   .header__sun {
     display: block;
-    color: var(--clr-slate800);
+    color: var(--clr-slate200);
     width: var(--size-xl);
     height: var(--size-xl);
     transition: color 0.3s;
@@ -80,7 +80,6 @@
 
   .header__sun:hover {
     animation: rotate 3s infinite linear;
-    color: var(--clr-slate200);
   }
 
   @keyframes rotate {

@@ -1,14 +1,40 @@
 .projects {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3rem;
 }
 
+.projects::before {
+  content: '';
+  position: absolute;
+  top: -15rem;
+  right: 0;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: var(--clr-purple);
+  opacity: 0.6;
+  filter: blur(100px);
+}
+
+.projects::after {
+  content: '';
+  position: absolute;
+  bottom: -10rem;
+  left: 0;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  background-color: var(--clr-purple);
+  opacity: 0.6;
+  filter: blur(100px);
+}
+
 .projects__title {
   font-size: var(--size-2xl);
   color: var(--clr-light);
-  text-align: center;
 }
 
 .projects__wrapper {
@@ -30,8 +56,7 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  border-radius: 18px;
-  box-shadow: 0 0 30px -10px var(--clr-purple);
+  border-radius: 0.5rem;
   transition: transform 1s ease-in-out;
   backface-visibility: hidden;
 }
@@ -56,6 +81,7 @@
   padding: 0 2rem;
   background-color: var(--clr-card);
   transform: rotatex(-180deg);
+  box-shadow: 0 0 30px -10px var(--clr-purple);
 }
 
 .projects__card:hover .projects__card-img-wrapper {
@@ -176,6 +202,18 @@
   .projects__card-teckstack-icon {
     width: 33px;
     height: 33px;
+  }
+
+  .projects::before {
+    width: 15rem;
+    height: 15rem;
+    filter: blur(200px);
+  }
+  
+  .projects::after {
+    width: 15rem;
+    height: 15rem;
+    filter: blur(200px);
   }
 }
 
