@@ -81,6 +81,16 @@
   margin-top: 5rem;
 }
 
+.scroll-up {
+  top: 1rem;
+  transition: top 2s;
+}
+
+.scroll-down {
+  top: -10rem;
+  transition: top 2s;
+}
+
 /* xs */
 @media (min-width: 475px) {
   .container {

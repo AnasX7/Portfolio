@@ -13,6 +13,16 @@
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   box-shadow: 0 0 100px -10px var(--clr-purple);
+  animation: header-drop 0.7s ease-in-out;
+}
+
+@keyframes header-drop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .header__logo {
@@ -33,6 +43,10 @@
   fill: var(--clr-slate200);
   width: var(--size-3xl);
   height: var(--size-3xl);
+}
+
+.header__close {
+  display: none;
 }
 
 /* xs */
@@ -75,7 +89,6 @@
     color: var(--clr-slate200);
     width: var(--size-xl);
     height: var(--size-xl);
-    transition: color 0.3s;
   }
 
   .header__sun:hover {

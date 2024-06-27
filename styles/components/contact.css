@@ -62,7 +62,6 @@
 }
 
 .contact__line {
-  content: "";
   display: block;
   width: 85%;
   max-width: 220px;

@@ -6,6 +6,16 @@
   align-items: center;
   gap: 1rem;
   padding-top: 5.8rem;
+  animation: hero-drop 1s ease-in-out;
+}
+
+@keyframes hero-drop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .hero__img {
