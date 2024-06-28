@@ -7,24 +7,24 @@ const mobileNav = () => {
   const openNav = () => {
     openBtn.style.display = "none";
     closeBtn.style.display = "block";
-    mobileNav.style.display = "flex";
+    mobileNav.style.right = "1rem";
   };
 
   const closeNav = () => {
     openBtn.style.display = "block";
     closeBtn.style.display = "none";
-    mobileNav.style.display = "none";
+    mobileNav.style.right = "-10rem";
   };
 
   const handleResize = () => {
-    if (window.innerWidth > 768) {
+    if (window.innerWidth >= 768) {
       openBtn.style.display = "none";
       closeBtn.style.display = "none";
-      mobileNav.style.display = "none";
+      mobileNav.style.right = "-10rem";
     } else {
       openBtn.style.display = "block";
       closeBtn.style.display = "none";
-      mobileNav.style.display = "none";
+      mobileNav.style.right = "-10rem";
     }
   };
 
@@ -35,9 +35,9 @@ const mobileNav = () => {
     link.addEventListener("click", closeNav);
   });
 
-  window.addEventListener("resize", handleResize);
+  window.addEventListener("touchmove", closeNav);
 
-  handleResize();
+  window.addEventListener("resize", handleResize);
 };
 
 export default mobileNav;

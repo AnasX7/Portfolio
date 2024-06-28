@@ -22,6 +22,16 @@
 /* @media (min-width: 1536px) {
 } */
 
+.light-mode {
+  --clr-light: #070a13;
+  --clr-dark: #f1f4fd;
+  --clr-slate200: #1e293b;
+  --clr-slate400: #1e293b;
+  --clr-slate600: #1e293b;
+  --clr-slate800: #1e293b;
+  --clr-card: #fff;
+}
+
 .btn {
   display: inline-block;
   font-weight: 600;
@@ -83,12 +93,12 @@
 
 .scroll-up {
   top: 1rem;
-  transition: top 2s;
+  transition: top 1s;
 }
 
 .scroll-down {
   top: -10rem;
-  transition: top 2s;
+  transition: top 1s;
 }
 
 /* xs */

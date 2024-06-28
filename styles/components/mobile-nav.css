@@ -1,22 +1,13 @@
 .mobile-nav {
-  display: none;
   position: fixed;
-  right: 2rem;
+  right: -10rem;
   top: 5rem;
   z-index: 999;
   background-color: rgba(92, 126, 230, 0.8);
   border-radius: 15px;
   padding: 1rem;
   box-shadow: 0 0 100px -10px var(--clr-purple);
-  animation: mobile-nav-slide 0.7s ease;
-}
-
-@keyframes mobile-nav-slide {
-  from {
-    transform: translateX(100%);
-  } to {
-    transform: translateX(0);
-  }
+  transition: right 0.7s ease;
 }
 
 .mobile-nav__menu {
@@ -58,4 +49,11 @@
   color: var(--clr-slate200);
   width: var(--size-2xl);
   height: var(--size-2xl);
+}
+
+.mobile-nav__moon {
+  display: none;
+  color: var(--clr-slate200);
+  width: var(--size-xl);
+  height: var(--size-xl);
 }

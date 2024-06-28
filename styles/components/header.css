@@ -38,6 +38,10 @@
   display: none;
 }
 
+.header__moon {
+  display: none;
+}
+
 .header__bars {
   display: block;
   fill: var(--clr-slate200);
@@ -92,7 +96,7 @@
   }
 
   .header__sun:hover {
-    animation: rotate 3s infinite linear;
+    animation: rotate 5s infinite linear;
   }
 
   @keyframes rotate {
@@ -101,6 +105,28 @@
     }
     to {
       transform: rotate(360deg);
+    }
+  }
+
+  .header__moon {
+    color: var(--clr-slate200);
+    width: var(--size-xl);
+    height: var(--size-xl);
+  }
+
+  .header__moon:hover {
+    animation: rotate-right-left 2.5s infinite linear;
+  }
+
+  @keyframes rotate-right-left {
+    0% {
+      transform: rotate(0deg);
+    }
+    50% {
+      transform: rotate(45deg);
+    }
+    100% {
+      transform: rotate(0deg);
     }
   }
 
