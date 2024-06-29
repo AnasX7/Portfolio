@@ -55,6 +55,7 @@
 .hero__marker {
   position: absolute;
   width: 4.5rem;
+  height: auto;
   top: -1.2rem;
   right: -1rem;
 }

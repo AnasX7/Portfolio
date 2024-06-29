@@ -41,7 +41,7 @@
 
 .about__list {
   font-size: var(--size-sm);
-  color: var(--clr-slate200);
+  color: #e2e8f0;
   letter-spacing: -0.05em;
   background-color: var(--clr-purple);
   border-radius: 4px;

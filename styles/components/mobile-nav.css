@@ -25,7 +25,7 @@
 .mobile-nav__link {
   font-size: var(--size-sm);
   font-weight: 600;
-  color: var(--clr-slate200);
+  color: #e2e8f0;
   text-decoration: none;
   letter-spacing: -0.05em;
   width: 100%;
@@ -33,7 +33,7 @@
 }
 
 .mobile-nav__link:hover {
-  color: var(--clr-dark);
+  color: #070a13;
 }
 
 .mobile-nav__link-line {
@@ -41,7 +41,7 @@
   width: 100%;
   max-width: 220px;
   height: 1px;
-  background-color: var(--clr-slate200);
+  background-color: #e2e8f0;
 }
 
 .mobile-nav__sun {
@@ -53,7 +53,7 @@
 
 .mobile-nav__moon {
   display: none;
-  color: var(--clr-slate200);
+  color: #e2e8f0;
   width: var(--size-xl);
   height: var(--size-xl);
 }

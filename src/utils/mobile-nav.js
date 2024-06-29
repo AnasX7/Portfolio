@@ -3,6 +3,7 @@ const mobileNav = () => {
   const closeBtn = document.querySelector(".header__close");
   const mobileNav = document.querySelector(".mobile-nav");
   const mobileNavLinks = document.querySelectorAll(".mobile-nav__link");
+  const toggleTheme = document.querySelectorAll("#theme-toggle");
 
   const openNav = () => {
     openBtn.style.display = "none";
@@ -11,7 +12,8 @@ const mobileNav = () => {
   };
 
   const closeNav = () => {
-    openBtn.style.display = "block";
+    const isMobile = window.innerWidth < 768;
+    openBtn.style.display = isMobile ? "block" : "none";
     closeBtn.style.display = "none";
     mobileNav.style.right = "-10rem";
   };
@@ -35,7 +37,11 @@ const mobileNav = () => {
     link.addEventListener("click", closeNav);
   });
 
-  window.addEventListener("touchmove", closeNav);
+  toggleTheme.forEach((btn) => {
+    btn.addEventListener("click", closeNav);
+  });
+
+  window.addEventListener('scroll', closeNav);
 
   window.addEventListener("resize", handleResize);
 };

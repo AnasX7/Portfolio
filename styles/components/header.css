@@ -27,7 +27,7 @@
 
 .header__logo {
   font-size: var(--size-xl);
-  color: var(--clr-slate200);
+  color: #e2e8f0;
 }
 
 .header__menu {
@@ -44,7 +44,7 @@
 
 .header__bars {
   display: block;
-  fill: var(--clr-slate200);
+  fill: #e2e8f0;
   width: var(--size-3xl);
   height: var(--size-3xl);
 }
@@ -79,13 +79,13 @@
     font-size: var(--size-xs);
     text-decoration: none;
     font-weight: 600;
-    color: var(--clr-slate200);
+    color: #e2e8f0;
     letter-spacing: -0.05em;
     transition: color 0.3s;
   }
 
   .header__link:hover {
-    color: var(--clr-dark);
+    color: #070a13;
   }
 
   .header__sun {
@@ -109,7 +109,7 @@
   }
 
   .header__moon {
-    color: var(--clr-slate200);
+    color: #e2e8f0;
     width: var(--size-xl);
     height: var(--size-xl);
   }

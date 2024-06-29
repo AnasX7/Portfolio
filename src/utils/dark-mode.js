@@ -46,6 +46,7 @@ const darkMode = () => {
   });
 
   window.addEventListener("resize", handleBtn);
+  window.addEventListener("load", handleBtn);
 };
 
 export default darkMode;
