@@ -29,6 +29,7 @@
   --clr-slate400: #1e293b;
   --clr-slate600: #1e293b;
   --clr-slate800: #1e293b;
+  --clr-azureRadiance: #9dbbf3;
   --clr-card: #fff;
 }
 
@@ -37,12 +38,12 @@
   font-weight: 600;
   text-decoration: none;
   letter-spacing: -0.05em;
-  background-color: var(--clr-purple);
-  color: #f1f4fd;
+  background-color: var(--clr-azureRadiance);
+  color: #070a13;
   padding: 0.5em 1em;
   border-radius: 6px;
   box-shadow: 0 10px 20px rgba(92, 126, 230, 0.5),
-    0 6px 6px rgba(92, 126, 230, 0.5), 0 0 100px -10px var(--clr-purple);
+    0 0 100px -10px var(--clr-azureRadiance);
 
   transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -50,7 +51,7 @@
 .btn:hover {
   transform: translate(0px, -3px) scale(0.95);
   box-shadow: 0 14px 28px rgba(92, 126, 230, 0.5),
-    0 10px 10px rgba(92, 126, 230, 0.5), 0 0 120px -10px var(--clr-purple);
+    0 0 120px -10px var(--clr-azureRadiance);
 }
 
 .btn2 {
@@ -59,19 +60,20 @@
   text-decoration: none;
   letter-spacing: -0.05em;
   background-color: inherit;
-  color: var(--clr-purple);
-  border: 2px solid var(--clr-purple);
+  color: #5c7ee6;
+  border: 2px solid #5c7ee6;
   padding: calc(0.5em + 1px) 1em;
   border-radius: 6px;
-  box-shadow: 0 10px 20px rgba(92, 126, 230, 0.5),
-    0 0 100px -10px var(--clr-purple);
+  box-shadow: 0 10px 20px rgba(92, 126, 230, 0.5), 0 0 100px -10px #5c7ee6;
+
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .btn2:hover {
   transform: translate(0px, -3px) scale(0.95);
-  box-shadow: 0 14px 28px rgba(92, 126, 230, 0.5),
-    0 0 120px -10px var(--clr-purple);
+  box-shadow: 0 14px 28px rgba(92, 126, 230, 0.5), 0 0 120px -10px #5c7ee6;
 }
 
 .container {

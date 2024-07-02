@@ -41,12 +41,12 @@
 
 .about__list {
   font-size: var(--size-sm);
-  color: #e2e8f0;
+  color: #070a13;
   letter-spacing: -0.05em;
-  background-color: var(--clr-purple);
+  background-color: var(--clr-azureRadiance);
   border-radius: 4px;
   padding: 0.2em 0.8em;
-  box-shadow: 0 0 100px -10px var(--clr-purple);
+  box-shadow: 0 0 100px -10px var(--clr-azureRadiance);
 }
 
 /* delay for eash item => calc(Duration * Delay * -1) */

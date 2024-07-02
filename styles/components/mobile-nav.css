@@ -3,11 +3,13 @@
   right: -10rem;
   top: 5rem;
   z-index: 999;
-  background-color: rgba(92, 126, 230, 0.8);
+  background-color: rgba(92, 126, 230, 0.5);
   border-radius: 15px;
   padding: 1rem;
-  box-shadow: 0 0 100px -10px var(--clr-purple);
+  box-shadow: 0 0 100px -10px var(--clr-azureRadiance);
   transition: right 0.7s ease;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
 }
 
 .mobile-nav__menu {
@@ -25,7 +27,7 @@
 .mobile-nav__link {
   font-size: var(--size-sm);
   font-weight: 600;
-  color: #e2e8f0;
+  color: var(--clr-slate200);
   text-decoration: none;
   letter-spacing: -0.05em;
   width: 100%;
@@ -41,7 +43,7 @@
   width: 100%;
   max-width: 220px;
   height: 1px;
-  background-color: #e2e8f0;
+  background-color: var(--clr-dark);
 }
 
 .mobile-nav__sun {
@@ -53,7 +55,7 @@
 
 .mobile-nav__moon {
   display: none;
-  color: #e2e8f0;
+  color: var(--clr-slate200);
   width: var(--size-xl);
   height: var(--size-xl);
 }

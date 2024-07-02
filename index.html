@@ -4,11 +4,45 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <title>𝓐𝓷𝖆𝔖 Portfolio</title>
+    <meta
+      name="description"
+      content="Anas is a front-end developer with a keen eye for design, specializing in creating interactive websites & applications that deliver engaging user experiences."
+    />
+    <meta
+      name="keywords"
+      content="portfolio, HTML, CSS, javaScript, front-end, web developer, ui/ux, anas, anas salem, انس, انس سالم,مطور مواقع"
+    />
+    <meta name="author" content="Anas Salem" />
+    <!-- <link rel="canonical" href=""> -->
+    <meta name="robots" content="index, follow" />
+    <!-- <meta property="og:title" content="Your Name - Portfolio">
+    <meta property="og:description" content="A brief description of your portfolio.">
+    <meta property="og:url" content="https://yourwebsite.com">
+    <meta property="og:image" content="https://yourwebsite.com/path/to/image.jpg">
+    <meta property="og:type" content="website"> -->
+    <!-- <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Your Name - Portfolio">
+    <meta name="twitter:description" content="A brief description of your portfolio.">
+    <meta name="twitter:image" content="https://yourwebsite.com/path/to/image.jpg"> -->
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#070a13" />
+    <link
+      rel="icon"
+      href="https://yourwebsite.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://yourwebsite.com/apple-touch-icon.png"
+    />
   </head>
   <body>
     <!-- header section -->
@@ -21,12 +55,12 @@
           <li><a class="header__link" href="#projects">Projects</a></li>
           <li><a class="header__link" href="#contact">Contact</a></li>
         </ul>
-        <button class="header__bars header__open">
+        <button class="header__bars header__open" aria-label="Open Menu">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path d="M4 6h16v2H4zm4 5h12v2H8zm5 5h7v2h-7z"></path>
           </svg>
         </button>
-        <button class="header__bars header__close">
+        <button class="header__bars header__close" aria-label="Close Menu">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
             <path
               fill-rule="evenodd"
@@ -36,7 +70,11 @@
           </svg>
         </button>
       </nav>
-      <button id="theme-toggle" class="header__sun">
+      <button
+        id="theme-toggle"
+        class="header__sun"
+        aria-label="Toggle Dark Mode"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -47,7 +85,11 @@
           />
         </svg>
       </button>
-      <button id="theme-toggle" class="header__moon">
+      <button
+        id="theme-toggle"
+        class="header__moon"
+        aria-label="Toggle Light Mode"
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -71,7 +113,11 @@
           <li><a class="mobile-nav__link" href="#contact">Contact</a></li>
           <li class="mobile-nav__link-line"></li>
           <li>
-            <button id="theme-toggle" class="mobile-nav__sun">
+            <button
+              id="theme-toggle"
+              class="mobile-nav__sun"
+              aria-label="Toggle Light Mode"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -82,7 +128,11 @@
                 />
               </svg>
             </button>
-            <button id="theme-toggle" class="mobile-nav__moon">
+            <button
+              id="theme-toggle"
+              class="mobile-nav__moon"
+              aria-label="Toggle Dark Mode"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
@@ -105,18 +155,20 @@
       <section id="home" class="hero container">
         <img
           class="hero__img"
-          src="/hero.jpg"
+          src="/hero.webp"
           alt="Profile picture"
-          width="10px"
-          height="10px"
+          width="6rem"
+          height="6rem"
         />
         <div class="hero__subtitle-wrapper">
           <h2 class="hero__subtitle">Hi, I'm Anas</h2>
           <img
             class="hero__marker"
-            src="/marker.png"
-            width="10px"
-            height="10px"
+            src="/marker.webp"
+            width="4.5rem"
+            height="auto"
+            alt="marker"
+            loading="eager"
           />
         </div>
         <h1 class="hero__title">
@@ -252,25 +304,34 @@
         <div class="projects__wrapper">
           <!-- project 1 -->
           <div class="projects__card">
-            <div class="projects__card-img-wrapper">
+            <div
+              class="projects__card-img-wrapper"
+              tabindex="0"
+              aria-label="JS Documentation Project"
+            >
               <img
                 class="projects__card-img"
-                src="/Js_documentation.png"
+                src="/Js_documentation.webp"
                 alt="JS Documentation"
-                width="10px"
-                height="10px"
+                width="250px"
+                height="300px"
                 loading="lazy"
               />
             </div>
             <div class="projects__card-content">
               <div class="projects__card-wrapper">
                 <h3 class="projects__card-title">JS Documentation</h3>
-                <a href="#">
+                <a
+                  href="https://js-documentation-kappa.vercel.app/"
+                  target="_blank"
+                  tabindex="0"
+                  aria-label="Go to JS Documentation Website"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
-                    width="10px"
-                    height="10px"
+                    width="10"
+                    height="10"
                     fill="currentColor"
                     class="projects__card-link"
                   >
@@ -347,20 +408,29 @@
           </div>
           <!-- project 2 -->
           <div class="projects__card">
-            <div class="projects__card-img-wrapper">
+            <div
+              class="projects__card-img-wrapper"
+              tabindex="0"
+              aria-label="CarsX Website Project"
+            >
               <img
                 class="projects__card-img"
-                src="/CarsX.png"
-                alt="JS Documentation"
-                width="10px"
-                height="10px"
+                src="/CarsX.webp"
+                alt="CarsX Website"
+                width="250px"
+                height="300px"
                 loading="lazy"
               />
             </div>
             <div class="projects__card-content">
               <div class="projects__card-wrapper">
                 <h3 class="projects__card-title">CarsX Website</h3>
-                <a href="#">
+                <a
+                  href="https://cars-x-website.vercel.app/"
+                  target="_blank"
+                  tabindex="0"
+                  aria-label="Go to CarsX Website"
+                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
