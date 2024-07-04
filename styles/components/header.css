@@ -13,18 +13,8 @@
   padding-top: 0.7rem;
   padding-bottom: 0.7rem;
   box-shadow: 0 0 100px -10px var(--clr-azureRadiance);
-  animation: header-drop 0.7s ease-in-out;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-}
-
-@keyframes header-drop {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(0);
-  }
 }
 
 .header__logo {
