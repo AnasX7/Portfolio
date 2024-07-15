@@ -43,7 +43,7 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--clr-dark);
   background-image: radial-gradient(var(--clr-slate600) 1px, transparent 1px);
-  background-size: 40px 40px;
+  background-size: 37px 37px;
   color: var(--clr-light);
 }
 
