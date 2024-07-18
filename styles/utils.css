@@ -30,7 +30,6 @@
   --clr-slate600: #1e293b;
   --clr-slate800: #1e293b;
   --clr-azureRadiance: #9dbbf3;
-  --clr-card: #fff;
 }
 
 .btn {
@@ -94,14 +93,8 @@
   margin-top: 5rem;
 }
 
-.scroll-up {
-  top: 1rem;
-  transition: top 1s;
-}
-
-.scroll-down {
-  top: -10rem;
-  transition: top 1s;
+.footer {
+  margin-top: 10rem;
 }
 
 /* xs */

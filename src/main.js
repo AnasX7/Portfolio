@@ -14,8 +14,10 @@ import navbar from "./utils/navbar";
 import mobileNav from "./utils/mobile-nav";
 import darkMode from "./utils/dark-mode";
 import downloadResume from "./utils/download-resume";
+import scrollrevealAnimation from "./utils/scrollreveal-animation";
 
 loader();
+scrollrevealAnimation();
 navbar();
 mobileNav();
 darkMode();

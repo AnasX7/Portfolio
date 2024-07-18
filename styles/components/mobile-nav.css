@@ -1,15 +1,23 @@
 .mobile-nav {
   position: fixed;
-  right: -10rem;
+  right: 1rem;
   top: 5rem;
   z-index: 999;
   background-color: rgba(92, 126, 230, 0.5);
   border-radius: 15px;
   padding: 1rem;
   box-shadow: 0 0 100px -10px var(--clr-azureRadiance);
-  transition: right 0.7s ease;
+  transition: transform 0.5s ease;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+}
+
+.mobile-nav.open {
+  transform: translate3d(0, 0, 0);
+}
+
+.mobile-nav.close {
+  transform: translate3d(11rem, 0, 0);
 }
 
 .mobile-nav__menu {

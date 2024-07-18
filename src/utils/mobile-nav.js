@@ -39,7 +39,8 @@ const mobileNav = () => {
     addFocus();
     openBtn.style.display = "none";
     closeBtn.style.display = "block";
-    mobileNav.style.right = "1rem";
+    mobileNav.classList.add("open");
+    mobileNav.classList.remove("close");
   };
 
   const closeNav = () => {
@@ -47,19 +48,16 @@ const mobileNav = () => {
     const isMobile = window.innerWidth < 768;
     openBtn.style.display = isMobile ? "block" : "none";
     closeBtn.style.display = "none";
-    mobileNav.style.right = "-10rem";
+    mobileNav.classList.add("close");
+    mobileNav.classList.remove("open");
   };
 
   const handleResize = () => {
-    if (window.innerWidth >= 768) {
-      openBtn.style.display = "none";
-      closeBtn.style.display = "none";
-      mobileNav.style.right = "-10rem";
-    } else {
-      openBtn.style.display = "block";
-      closeBtn.style.display = "none";
-      mobileNav.style.right = "-10rem";
-    }
+    const isMobile = window.innerWidth < 768;
+    openBtn.style.display = isMobile ? "block" : "none";
+    closeBtn.style.display = "none";
+    mobileNav.classList.add("close");
+    mobileNav.classList.remove("open");
   };
 
   const handleFocus = () => {
@@ -80,7 +78,7 @@ const mobileNav = () => {
   handleFocus();
 
   openBtn.addEventListener("click", openNav);
-  
+
   closeBtn.addEventListener("click", closeNav);
 
   mobileNavLinks.forEach((link) => {

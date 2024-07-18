@@ -17,6 +17,7 @@
 .about__title {
   font-size: var(--size-2xl);
   color: var(--clr-light);
+  align-self: flex-start;
 }
 
 .about__description {
@@ -47,31 +48,42 @@
   border-radius: 4px;
   padding: 0.2em 0.8em;
   box-shadow: 0 0 100px -10px var(--clr-azureRadiance);
+  transition: transform 0.5s ease;
+}
+
+.about__list:hover {
+  transform: scale(1.1);
 }
 
 /* delay for eash item => calc(Duration * Delay * -1) */
 .about__item1 {
-  animation-delay: calc(30s / 6 * (6 - 1) * -1);
+  -webkit-animation-delay: calc(30s / 6 * (6 - 1) * -1);
+          animation-delay: calc(30s / 6 * (6 - 1) * -1);
 }
 
 .about__item2 {
-  animation-delay: calc(30s / 6 * (6 - 2) * -1);
+  -webkit-animation-delay: calc(30s / 6 * (6 - 2) * -1);
+          animation-delay: calc(30s / 6 * (6 - 2) * -1);
 }
 
 .about__item3 {
-  animation-delay: calc(30s / 6 * (6 - 3) * -1);
+  -webkit-animation-delay: calc(30s / 6 * (6 - 3) * -1);
+          animation-delay: calc(30s / 6 * (6 - 3) * -1);
 }
 
 .about__item4 {
-  animation-delay: calc(30s / 6 * (6 - 4) * -1);
+  -webkit-animation-delay: calc(30s / 6 * (6 - 4) * -1);
+          animation-delay: calc(30s / 6 * (6 - 4) * -1);
 }
 
 .about__item5 {
-  animation-delay: calc(30s / 6 * (6 - 5) * -1);
+  -webkit-animation-delay: calc(30s / 6 * (6 - 5) * -1);
+          animation-delay: calc(30s / 6 * (6 - 5) * -1);
 }
 
 .about__item6 {
-  animation-delay: calc(30s / 6 * (6 - 6) * -1);
+  -webkit-animation-delay: calc(30s / 6 * (6 - 6) * -1);
+          animation-delay: calc(30s / 6 * (6 - 6) * -1);
 }
 
 @media (width <= 767.5px) {
@@ -82,7 +94,14 @@
     position: relative;
     height: 70px;
     overflow: hidden;
-    mask-image: linear-gradient(
+    -webkit-mask-image: linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+            mask-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 1) 20%,
@@ -97,10 +116,20 @@
     fill: var(--clr-slate400);
     position: absolute;
     left: max(calc(100px * 6), 100%);
-    animation-name: scroll-left;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-name: scroll-left;
+            animation-name: scroll-left;
+    -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+
+  @-webkit-keyframes scroll-left {
+    to {
+      left: -100px;
+    }
   }
 
   @keyframes scroll-left {
@@ -166,7 +195,14 @@
     height: 30rem;
     position: relative;
     overflow: hidden;
-    mask-image: linear-gradient(
+    -webkit-mask-image: linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 20%,
+      rgba(0, 0, 0, 1) 80%,
+      rgba(0, 0, 0, 0)
+    );
+            mask-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 1) 20%,
@@ -179,12 +215,22 @@
     width: 200px;
     height: 200px;
     bottom: calc(6 * 200px);
-    animation-name: scroll-bottom;
+    -webkit-animation-name: scroll-bottom;
+            animation-name: scroll-bottom;
     fill: var(--clr-slate400);
     position: absolute;
-    animation-duration: 30s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    -webkit-animation-duration: 30s;
+            animation-duration: 30s;
+    -webkit-animation-timing-function: linear;
+            animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
+  }
+
+  @-webkit-keyframes scroll-bottom {
+    to {
+      bottom: -200px;
+    }
   }
 
   @keyframes scroll-bottom {
@@ -216,7 +262,14 @@
   .about__item {
     height: 300px;
     bottom: calc(6 * 300px);
-    animation-name: scroll-bottom;
+    -webkit-animation-name: scroll-bottom;
+            animation-name: scroll-bottom;
+  }
+
+  @-webkit-keyframes scroll-bottom {
+    to {
+      bottom: -300px;
+    }
   }
 
   @keyframes scroll-bottom {

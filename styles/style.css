@@ -8,7 +8,6 @@
   --clr-azureRadiance300: #9dbbf3;
   --clr-azureRadiance: #5c7ee6;
   --clr-azureRadiance700: #2f43c6;
-  --clr-card: #18181b;
 
   /* purple	rgb(92, 126, 230) */
 
@@ -43,8 +42,9 @@ body {
   font-family: "Poppins", sans-serif;
   background-color: var(--clr-dark);
   background-image: radial-gradient(var(--clr-slate600) 1px, transparent 1px);
-  background-size: 37px 37px;
+  background-size: 35px 35px;
   color: var(--clr-light);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 img,
@@ -54,6 +54,9 @@ canvas,
 svg {
   display: block;
   max-width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   user-select: none;
 }
 
@@ -71,7 +74,7 @@ a {
 }
 
 strong {
-  color: #5c7ee6;
+  color: var(--clr-azureRadiance);
 }
 
 /* Scroolbar */

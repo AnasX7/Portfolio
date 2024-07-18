@@ -5,8 +5,6 @@ const loader = () => {
     
     const handleLoader = () => {
         loader.classList.add('hidden');
-        pageContent.classList.add('visible');
-        navbar.classList.add('visible');
     };
 
     window.addEventListener('load', handleLoader);
