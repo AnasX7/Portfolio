@@ -58,32 +58,32 @@
 /* delay for eash item => calc(Duration * Delay * -1) */
 .about__item1 {
   -webkit-animation-delay: calc(30s / 6 * (6 - 1) * -1);
-          animation-delay: calc(30s / 6 * (6 - 1) * -1);
+  animation-delay: calc(30s / 6 * (6 - 1) * -1);
 }
 
 .about__item2 {
   -webkit-animation-delay: calc(30s / 6 * (6 - 2) * -1);
-          animation-delay: calc(30s / 6 * (6 - 2) * -1);
+  animation-delay: calc(30s / 6 * (6 - 2) * -1);
 }
 
 .about__item3 {
   -webkit-animation-delay: calc(30s / 6 * (6 - 3) * -1);
-          animation-delay: calc(30s / 6 * (6 - 3) * -1);
+  animation-delay: calc(30s / 6 * (6 - 3) * -1);
 }
 
 .about__item4 {
   -webkit-animation-delay: calc(30s / 6 * (6 - 4) * -1);
-          animation-delay: calc(30s / 6 * (6 - 4) * -1);
+  animation-delay: calc(30s / 6 * (6 - 4) * -1);
 }
 
 .about__item5 {
   -webkit-animation-delay: calc(30s / 6 * (6 - 5) * -1);
-          animation-delay: calc(30s / 6 * (6 - 5) * -1);
+  animation-delay: calc(30s / 6 * (6 - 5) * -1);
 }
 
 .about__item6 {
   -webkit-animation-delay: calc(30s / 6 * (6 - 6) * -1);
-          animation-delay: calc(30s / 6 * (6 - 6) * -1);
+  animation-delay: calc(30s / 6 * (6 - 6) * -1);
 }
 
 @media (width <= 767.5px) {
@@ -101,7 +101,7 @@
       rgba(0, 0, 0, 1) 80%,
       rgba(0, 0, 0, 0)
     );
-            mask-image: linear-gradient(
+    mask-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 1) 20%,
@@ -117,13 +117,13 @@
     position: absolute;
     left: max(calc(100px * 6), 100%);
     -webkit-animation-name: scroll-left;
-            animation-name: scroll-left;
+    animation-name: scroll-left;
     -webkit-animation-duration: 30s;
-            animation-duration: 30s;
+    animation-duration: 30s;
     -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
   }
 
   @-webkit-keyframes scroll-left {
@@ -202,7 +202,7 @@
       rgba(0, 0, 0, 1) 80%,
       rgba(0, 0, 0, 0)
     );
-            mask-image: linear-gradient(
+    mask-image: linear-gradient(
       to top,
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 1) 20%,
@@ -216,15 +216,15 @@
     height: 200px;
     bottom: calc(6 * 200px);
     -webkit-animation-name: scroll-bottom;
-            animation-name: scroll-bottom;
+    animation-name: scroll-bottom;
     fill: var(--clr-slate400);
     position: absolute;
     -webkit-animation-duration: 30s;
-            animation-duration: 30s;
+    animation-duration: 30s;
     -webkit-animation-timing-function: linear;
-            animation-timing-function: linear;
+    animation-timing-function: linear;
     -webkit-animation-iteration-count: infinite;
-            animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
   }
 
   @-webkit-keyframes scroll-bottom {
@@ -263,7 +263,7 @@
     height: 300px;
     bottom: calc(6 * 300px);
     -webkit-animation-name: scroll-bottom;
-            animation-name: scroll-bottom;
+    animation-name: scroll-bottom;
   }
 
   @-webkit-keyframes scroll-bottom {

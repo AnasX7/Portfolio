@@ -6,8 +6,8 @@
   align-items: center;
   background-color: var(--clr-dark);
   width: 100%;
-  gap: 0.6rem;
-  padding: 1rem;
+  gap: 1rem;
+  padding: 1rem 1rem 1.5rem;
   overflow: hidden;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
@@ -45,8 +45,8 @@
 } */
 
 .contact__img {
-  width: 6rem;
-  height: 6rem;
+  width: 4rem;
+  height: 4rem;
   -webkit-user-drag: none;
   transition: transform 0.3s ease;
 }
@@ -103,8 +103,8 @@
   }
 
   .contact__img {
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 5rem;
+    height: 5rem;
   }
 }
 
@@ -144,8 +144,8 @@
   }
 
   .contact__img {
-    width: 8rem;
-    height: 8rem;
+    width: 7rem;
+    height: 7rem;
   }
 
   .contact__icon {
@@ -157,8 +157,8 @@
 /* xl */
 @media (min-width: 1280px) {
   .contact {
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .contact__soical {

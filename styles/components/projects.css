@@ -35,21 +35,66 @@
 }
 
 .projects__card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   height: 300px;
   padding: 0.8rem;
   background-color: var(--clr-dark);
-  border: 1px solid var(--clr-azureRadiance300);
   border-radius: calc(10px + 0.8rem);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
 }
 
-.projects__card:hover,
-.projects__card:focus-within {
-  transform: scale(1.025);
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+.projects__card::after,
+.projects__card::before {
+  content: "";
+  position: absolute;
+  height: 102%;
+  width: 102%;
+  background-image: conic-gradient(
+    from var(--angle),
+    var(--clr-azureRadiance),
+    transparent 90%,
+    var(--clr-azureRadiance)
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  border-radius: calc((10px + 0.8rem) * 1.1);
+  -webkit-animation: 5s linear infinite spin;
+          animation: 5s linear infinite spin;
+}
+
+.projects__card::before {
+  -webkit-filter: blur(1.5rem);
+          filter: blur(1.5rem);
+  opacity: 0.8;
+}
+
+@-webkit-keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@keyframes spin {
+  from {
+    --angle: 0deg;
+  }
+  to {
+    --angle: 360deg;
+  }
 }
 
 .projects__card-img {
