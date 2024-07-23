@@ -69,23 +69,12 @@
   translate: -50% -50%;
   z-index: -1;
   border-radius: calc((10px + 0.8rem) * 1.1);
-  -webkit-animation: 5s linear infinite spin;
-          animation: 5s linear infinite spin;
+  animation: 5s linear infinite spin;
 }
 
 .projects__card::before {
-  -webkit-filter: blur(1.5rem);
-          filter: blur(1.5rem);
-  opacity: 0.8;
-}
-
-@-webkit-keyframes spin {
-  from {
-    --angle: 0deg;
-  }
-  to {
-    --angle: 360deg;
-  }
+  filter: blur(1rem);
+  opacity: 0.6;
 }
 
 @keyframes spin {
@@ -112,7 +101,6 @@
   object-fit: cover;
   -o-object-fit: cover;
   -webkit-user-drag: none;
-  -webkit-filter: brightness(50%);
   filter: brightness(50%);
   transform: scale(1.1);
 }
@@ -242,7 +230,6 @@
 @media (min-width: 1024px) {
   .projects__card-img img {
     transform: scale(1.3);
-    -webkit-filter: brightness(100%);
     filter: brightness(100%) blur(0);
     transition: transform 0.5s ease, filter 0.5s ease, -webkit-filter 0.5s ease;
   }
@@ -256,7 +243,6 @@
   .projects__card:hover .projects__card-img img,
   .projects__card:focus-within .projects__card-img img {
     transform: scale(1.03);
-    -webkit-filter: brightness(60%);
     filter: brightness(60%) blur(3px);
   }
 

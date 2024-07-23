@@ -63,13 +63,6 @@ const scrollrevealAnimation = () => {
     scale: 1.1,
   });
 
-  sr.reveal(".about__wrapper", {
-    ...scrollRevealOptions,
-    delay: 2000,
-    scale: 1.1,
-    mobile: false,
-  });
-
   sr.reveal(".projects__title", {
     ...scrollRevealOptions,
     scale: 1.1,

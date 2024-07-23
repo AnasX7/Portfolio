@@ -30,6 +30,11 @@
   --clr-slate600: #1e293b;
   --clr-slate800: #1e293b;
   --clr-azureRadiance: #9dbbf3;
+  --clr-github-fill: #181616;
+}
+
+.github-fill {
+  fill: var(--clr-github-fill);
 }
 
 .btn {
