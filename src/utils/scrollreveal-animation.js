@@ -67,6 +67,7 @@ const scrollrevealAnimation = () => {
     ...scrollRevealOptions,
     delay: 2000,
     scale: 1.1,
+    mobile: false,
   });
 
   sr.reveal(".projects__title", {
@@ -76,6 +77,7 @@ const scrollrevealAnimation = () => {
 
   sr.reveal(".contact", {
     ...scrollRevealOptions,
+    mobile: false,
   });
 
   sr.reveal(".contact__go-home", {
