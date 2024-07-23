@@ -3,7 +3,7 @@ const navbar = () => {
   let lastScrollY = window.scrollY;
 
   window.onscroll = () => {
-    if (window.scrollY > lastScrollY) {
+    if (window.scrollY > lastScrollY && window.scrollY > 0) {
       // Scrolling down
       header.classList.remove("scroll-up");
       header.classList.add("scroll-down");
