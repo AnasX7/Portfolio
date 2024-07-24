@@ -57,19 +57,21 @@
 
 .hero__subtitle-wrapper {
   position: relative;
+  display: inline-block;
 }
 
 .hero__subtitle {
   color: var(--clr-slate200);
   font-size: var(--size-base);
   line-height: 0.9;
+  display: inline-block;
 }
 
 .hero__marker {
   position: absolute;
   width: 4.5rem;
   height: auto;
-  top: -1.2rem;
+  top: -0.8rem;
   right: -1rem;
   fill: var(--clr-azureRadiance);
 }
@@ -80,7 +82,6 @@
   font-size: var(--size-4xl);
   letter-spacing: -0.05em;
   line-height: 0.9;
-
   background: linear-gradient(
     to right,
     rgba(92, 126, 230, 0.5) 0%,
@@ -90,8 +91,6 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  /* for firefox */
-  /* text-fill-color: transparent; */
 }
 
 .hero__description {
@@ -133,7 +132,7 @@
 
   .hero__marker {
     width: 5.5rem;
-    top: -1.5rem;
+    top: -1.25rem;
     right: -1.5rem;
   }
 
@@ -180,7 +179,7 @@
 
   .hero__marker {
     width: 6.5rem;
-    top: -1.6rem;
+    top: -1.55rem;
     right: -1.5rem;
   }
 
@@ -214,7 +213,7 @@
 
   .hero__marker {
     width: 9.5rem;
-    top: -2.3rem;
+    top: -2.2rem;
     right: -2rem;
   }
 
