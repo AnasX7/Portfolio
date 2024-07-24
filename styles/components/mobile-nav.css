@@ -4,7 +4,7 @@
   top: 5rem;
   z-index: 999;
   background-color: rgba(92, 126, 230, 0.5);
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 1rem;
   box-shadow: 0 0 100px -10px var(--clr-azureRadiance);
   transition: transform 0.5s ease;

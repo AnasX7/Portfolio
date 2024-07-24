@@ -41,8 +41,6 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   background-color: var(--clr-dark);
-  background-image: radial-gradient(var(--clr-slate600) 1px, transparent 1px);
-  background-size: 37px 37px;
   color: var(--clr-light);
   transition: background-color 0.3s ease, color 0.3s ease;
 }

@@ -8,7 +8,7 @@ const scrollrevealAnimation = () => {
     distance: "50px",
     duration: 1000,
     easing: "cubic-bezier(0.215, 0.61, 0.355, 1)",
-    viewFactor: 0.25,
+    viewFactor: 0.50,
   };
 
   sr.reveal(".hero__img", {
@@ -68,6 +68,12 @@ const scrollrevealAnimation = () => {
     scale: 1.1,
   });
 
+  sr.reveal(".projects__card", {
+    ...scrollRevealOptions,
+    interval: 500,
+    scale: 1.1,
+  });
+
   sr.reveal(".contact", {
     ...scrollRevealOptions,
     mobile: false,
@@ -84,11 +90,10 @@ const scrollrevealAnimation = () => {
     scale: 1.1,
   });
 
-  sr.reveal(".contact__soical a", {
+  sr.reveal(".contact__soical", {
     ...scrollRevealOptions,
     delay: 1000,
-    interval: 300,
-    scale: 1.3,
+    scale: 1.1,
   });
 };
 

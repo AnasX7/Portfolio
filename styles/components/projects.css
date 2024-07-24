@@ -6,20 +6,20 @@
   gap: 3rem;
 }
 
-/* .projects::after {
+.projects::after {
   content: "";
   position: absolute;
-  bottom: -10rem;
-  left: -5rem;
+  top: -5rem;
+  left: -10rem;
   width: 10rem;
   height: 10rem;
   border-radius: 50%;
-  background-color: var(--clr-azureRadiance);
-  opacity: 0.8;
+  background-color: #5c7ee6;
+  opacity: 0.6;
   -webkit-filter: blur(60px);
           filter: blur(60px);
   z-index: -1;
-} */
+}
 
 .projects__title {
   font-size: var(--size-2xl);
@@ -31,7 +31,7 @@
   width: 100%;
   max-width: 829px;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  grid-gap: 2.5rem;
+  grid-gap: 4rem;
 }
 
 .projects__card {
@@ -42,48 +42,10 @@
   height: 300px;
   padding: 0.8rem;
   background-color: var(--clr-dark);
-  border-radius: calc(10px + 0.8rem);
+  border: 1px solid var(--clr-azureRadiance300);
+  border-radius: calc(5px + 0.8rem);
+  box-shadow: 0 0 25px -10px var(--clr-azureRadiance);
   transition: transform 0.3s ease;
-}
-
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: false;
-}
-
-.projects__card::after,
-.projects__card::before {
-  content: "";
-  position: absolute;
-  height: 102%;
-  width: 102%;
-  background-image: conic-gradient(
-    from var(--angle),
-    var(--clr-azureRadiance),
-    transparent 90%,
-    var(--clr-azureRadiance)
-  );
-  top: 50%;
-  left: 50%;
-  translate: -50% -50%;
-  z-index: -1;
-  border-radius: calc((10px + 0.8rem) * 1.1);
-  animation: 5s linear infinite spin;
-}
-
-.projects__card::before {
-  filter: blur(1rem);
-  opacity: 0.6;
-}
-
-@keyframes spin {
-  from {
-    --angle: 0deg;
-  }
-  to {
-    --angle: 360deg;
-  }
 }
 
 .projects__card-img {
@@ -91,7 +53,7 @@
   width: 100%;
   height: 220px;
   align-self: center;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
 }
 
@@ -181,12 +143,12 @@
     font-size: var(--size-3xl);
   }
 
-  /* .projects::after {
+  .projects::after {
     width: 13rem;
     height: 13rem;
     -webkit-filter: blur(100px);
             filter: blur(100px);
-  } */
+  }
 }
 
 /* sm */
@@ -218,12 +180,12 @@
     height: 28px;
   }
 
-  /* .projects::after {
+  .projects::after {
     width: 15rem;
     height: 15rem;
     -webkit-filter: blur(100px);
             filter: blur(100px);
-  } */
+  }
 }
 
 /* lg */
@@ -266,12 +228,12 @@
     height: 30px;
   }
 
-  /* .projects::after {
+  .projects::after {
     width: 18rem;
     height: 18rem;
     -webkit-filter: blur(120px);
             filter: blur(120px);
-  } */
+  }
 }
 
 /* xl */
