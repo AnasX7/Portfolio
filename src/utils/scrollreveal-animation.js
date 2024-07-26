@@ -80,7 +80,7 @@ const scrollrevealAnimation = () => {
     mobile: false,
   });
 
-  sr.reveal(".contact__go-home", {
+  sr.reveal(".contact__img", {
     ...scrollRevealOptions,
     scale: 1.1,
   });
