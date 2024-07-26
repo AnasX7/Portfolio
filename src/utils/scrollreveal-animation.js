@@ -13,30 +13,31 @@ const scrollrevealAnimation = () => {
 
   sr.reveal(".hero__img", {
     ...scrollRevealOptions,
+    delay: 1500,
     scale: 1.1,
   });
 
   sr.reveal(".hero__subtitle-wrapper", {
     ...scrollRevealOptions,
-    delay: 500,
+    delay: 2000,
     scale: 1.1,
   });
 
   sr.reveal(".hero__title", {
     ...scrollRevealOptions,
-    delay: 1000,
+    delay: 2500,
     scale: 1.1,
   });
 
   sr.reveal(".hero__description", {
     ...scrollRevealOptions,
-    delay: 1500,
+    delay: 3000,
     scale: 1.1,
   });
 
   sr.reveal(".hero__btn-wrapper", {
     ...scrollRevealOptions,
-    delay: 1800,
+    delay: 3800,
     scale: 1.1,
   });
 

@@ -39,20 +39,10 @@
   filter: blur(50px);
 }
 
-/* .contact__go-home {
-  position: absolute;
-  top: -3rem;
-} */
-
 .contact__img {
   width: 4rem;
   height: 4rem;
   -webkit-user-drag: none;
-  transition: transform 0.3s ease;
-}
-
-.contact__img:hover {
-  transform: scale(1.1);
 }
 
 .contact__title {
