@@ -14,7 +14,6 @@
   padding-bottom: 0.7rem;
   box-shadow: 0 0 100px -10px var(--clr-azureRadiance);
   backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
   transition: transform 1s ease;
 }
 
@@ -97,17 +96,7 @@
   }
 
   .header__sun:hover {
-    -webkit-animation: 5s infinite linear rotate;
-            animation: 5s infinite linear rotate;
-  }
-
-  @-webkit-keyframes rotate {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
+    animation: 5s infinite linear rotate;
   }
 
   @keyframes rotate {
@@ -126,20 +115,7 @@
   }
 
   .header__moon:hover {
-    -webkit-animation: 2.5s infinite linear rotate-right-left;
-            animation: 2.5s infinite linear rotate-right-left;
-  }
-
-  @-webkit-keyframes rotate-right-left {
-    0% {
-      transform: rotate(0deg);
-    }
-    50% {
-      transform: rotate(45deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
+    animation: 2.5s infinite linear rotate-right-left;
   }
 
   @keyframes rotate-right-left {

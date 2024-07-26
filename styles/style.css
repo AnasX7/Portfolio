@@ -39,7 +39,7 @@ html {
 }
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Nunito', sans-serif;
   background-color: var(--clr-dark);
   color: var(--clr-light);
   transition: background-color 0.3s ease, color 0.3s ease;

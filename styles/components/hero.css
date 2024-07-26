@@ -20,12 +20,42 @@
   border-radius: 50%;
   background-image: radial-gradient(var(--clr-slate400) 1px, transparent 1px);
   background-size: 35px 35px;
-  mask-image: 
-    radial-gradient(circle, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 1) 50%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%),
-    linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 83%, rgba(0, 0, 0, 0)),
-    linear-gradient(to left, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 83%, rgba(0, 0, 0, 0)),
-    linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 83%, rgba(0, 0, 0, 0)),
-    linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 5%, rgba(0, 0, 0, 1) 83%, rgba(0, 0, 0, 0));
+  mask-image: radial-gradient(
+      circle,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 20%,
+      rgba(0, 0, 0, 1) 50%,
+      rgba(0, 0, 0, 0) 80%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 1) 83%,
+      rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(
+      to left,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 1) 83%,
+      rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 1) 83%,
+      rgba(0, 0, 0, 0)
+    ),
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 1) 5%,
+      rgba(0, 0, 0, 1) 83%,
+      rgba(0, 0, 0, 0)
+    );
   mask-composite: intersect;
   z-index: -1;
 }
@@ -72,7 +102,7 @@
   width: 4.5rem;
   height: auto;
   top: -0.8rem;
-  right: -1rem;
+  right: -1.2rem;
   fill: var(--clr-azureRadiance);
 }
 
@@ -133,7 +163,7 @@
   .hero__marker {
     width: 5.5rem;
     top: -1.25rem;
-    right: -1.5rem;
+    right: -1.7rem;
   }
 
   .hero__title {
@@ -180,7 +210,7 @@
   .hero__marker {
     width: 6.5rem;
     top: -1.55rem;
-    right: -1.5rem;
+    right: -1.7rem;
   }
 
   .hero__title {
@@ -214,7 +244,7 @@
   .hero__marker {
     width: 9.5rem;
     top: -2.2rem;
-    right: -2rem;
+    right: -2.3rem;
   }
 
   .hero__title {
